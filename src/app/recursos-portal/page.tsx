@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 
 interface Recurso {
@@ -120,10 +122,7 @@ export default function RecursosPortal() {
           </thead>
           <tbody>
             {filteredData.map((item) => (
-              <tr
-                key={item.id}
-                className="border-b hover:bg-gray-50"
-              >
+              <tr key={item.id} className="border-b hover:bg-gray-50">
                 <td className="p-3">{item.title}</td>
                 <td className="p-3">{item.country}</td>
                 <td className="p-3">{item.type}</td>
