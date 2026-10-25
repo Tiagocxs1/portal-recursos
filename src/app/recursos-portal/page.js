@@ -2,17 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 
-function Recurso {
-  id: string;
-  title: string;
-  country: string;
-  type: string;
-  program: string;
-  url: string;
-  priority: string;
-  notes: string;
-}
-
 const recursos = [
   {
     id: "1",
@@ -185,7 +174,6 @@ export default function RecursosPortal() {
   const [priorityFilter, setPriorityFilter] = React.useState("");
 
   React.useEffect(() => {
-    // No external fetch needed; data is embedded.
     setFiltered(recursos);
   }, []);
 
