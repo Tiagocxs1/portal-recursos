@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     // domains: [], // add if using external images
   },
+  experimental: {
+    turboopack: false,
+  },
 };
 
 module.exports = nextConfig;
