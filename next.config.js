@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // eslint-disable-next-line @next/next/no-image-metadata
+  transpileOnly: true,
   images: {
     // domains: [], // add if using external images
-  },
-  experimental: {
-    turboopack: false,
   },
 };
 
